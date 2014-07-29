@@ -1,0 +1,26 @@
+{
+    "name": "gerardog8/authentify",
+    "description": "",
+    "authors": [
+        {
+            "name": "Gerardo Gómez",
+            "email": "gerardo.gomez.r@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "files" : [
+            "src/GerardoG8/Authentify/helpers.php"
+        ],
+        "classmap": [
+            "src/migrations",
+            "src/controllers"
+        ],
+        "psr-0": {
+            "GerardoG8\\Authentify\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
