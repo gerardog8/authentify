@@ -24,17 +24,13 @@ Route::filter('authentify.config', function ($route, $request, $param) {
 });
 
 Route::filter('authentify.permission', function ($route, $request, $param) {
-	$param = 'authentify::' . $param;
-
-	if (!Config::get($param)) {
+	if (!(Auth::check() && Auth::user()->can($param))) {
 		App::abort(404);
 	}
 });
 
 Route::filter('authentify.role', function ($route, $request, $param) {
-	$param = 'authentify::' . $param;
-
-	if (!Config::get($param)) {
+	if (!(Auth::check() && Auth::user()->hasRoles($param))) {
 		App::abort(404);
 	}
 });

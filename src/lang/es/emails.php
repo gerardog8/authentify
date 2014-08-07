@@ -2,18 +2,18 @@
 
 return array(
 	'remind' => array(
-		'subject' => 'Password Reminder',
-		'title' => 'Reset your password',
-		'body' => 'To reset your password, complete this form:'
+		'subject' => 'Recordatorio de Contraseña',
+		'title' => 'Reestablece tu contraseña',
+		'body' => 'Para reestablecer tu contraseña completa el formulario en el siguiente enlace:'
 	),
 	'activate' => array(
 		'subject' => 'Activate your account',
 		'title' => 'Activate your account',
-		'body' => 'Your account has been created, in order to activate it please access this link:',
+		'body' => 'Tu cuenta ha sido creada, para activarla accede al siguiente enlace:',
 	),
 	'welcome' => array(
-		'subject' => 'Your new account',
-		'title' => 'Welcome',
-		'body' => 'Your account account is activated, you may sign in on this url:',
+		'subject' => 'Tu nueva cuenta',
+		'title' => 'Bienvenido',
+		'body' => 'Tu cuenta está activa, para acceder haz click en el siguiente enlace:',
 	)
 );

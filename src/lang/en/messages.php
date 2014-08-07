@@ -3,40 +3,40 @@
 return array(
 
 	'signin' => array(
-		'error' => 'Correo electrónico o contraseña no coincide.',
-		'success' => 'Has iniciado sesión con éxito.'
+		'error' => 'E-mail or password missmatch.',
+		'success' => 'You have successfully logged in.'
 	),
 
 	'activate' => array(
-		'success' => 'Tu usuario ha sido activado, ahora puedes iniciar sesión.'
+		'success' => 'Your account has been activated, you can now sign in.'
 	),
 
 	'signup' => array(
-		'error' => 'Algo salió muy mal, por favor intenta de nuevo más tarde.',
-		'success' => 'Te has registrado con éxito, por favor sigue los pasos que enviamos a tu correo electrónico para activar tu cuenta.'
+		'error' => 'Something went wrong, please try again later.',
+		'success' => 'You have successfully signed up, we sent an e-mail with the steps to activate your account.'
 	),
 
 	'account' => array(
-		'error' => 'Algo salió muy mal, por favor intenta de nuevo más tarde (la información de tu cuenta, no ha sido cambiada).',
-		'success' => 'Has actializado la información de tu cuenta.'
+		'error' => 'Something went wrong, please try again later (yout account information has not been changed).',
+		'success' => 'You have updated your account information.'
 	),
 
 	'password' => array(
-		'error' => 'Algo salió muy mal, por favor intenta de nuevo más tarde, tu contraseña no se actualizó.',
-		'success' => 'Has actializado la información de tu cuenta.'
+		'error' => 'Something went wrong, please try again later, your password was not updated.',
+		'success' => 'You have updated your account information.'
 	),
 
 	'remind' => array(
-		'error' => 'Algo salió muy mal, por favor intenta de nuevo más tarde.',
-		'success' => 'Puedes re-establecer tu contraseña siguiendo los pasos que enviamos a tuu correo electrónico.'
+		'error' => 'Something went wrong, please try again later.',
+		'success' => 'You may reset your password by following the steps described on the e-mail we just sent you.'
 	),
 
 	'reset' => array(
-		'error' => 'Algo salió muy mal, por favor intenta de nuevo más tarde.',
-		'success' => 'Puedes utilizar tu nuevo password para iniciar sesión.'
+		'error' => 'Something went wrong, please try again later.',
+		'success' => 'You may now use your new password to sign in.'
 	),
 
-	'change_password' => 'Cambiar contraseña',
-	'account_info' => 'Información de la cuenta',
+	'change_password' => 'Change password',
+	'account_info' => 'Account information',
 
 );
