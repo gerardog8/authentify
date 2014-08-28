@@ -10,6 +10,7 @@ return array(
 	'new-password_confirmation' => 'Confirm your new password',
 	'sign-up' => 'Sign up',
 	'sign-in' => 'Sign in',
+	'remember-me' => 'Remember me',
 	'sign-out' => 'Sign out',
 	'my-account' => 'My account',
 	'reset-password' => 'Reset password',

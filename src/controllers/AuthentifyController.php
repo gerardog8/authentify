@@ -6,6 +6,7 @@ class AuthentifyController extends BaseController {
 		$this->beforeFilter('authentify.config:registerable', array('only' => array('getSignUp', 'postSignUp')));
 		$this->beforeFilter('authentify.config:remindable', array('only' => array('getRemind', 'postRemind', 'getReset', 'postReset')));
 		$this->beforeFilter('authentify.config:confirmable', array('only' => array('getActivate')));
+		$this->beforeFilter('authentify.config:updateable', array('only' => array('getAccount', 'postAccount', 'postPassword')));
 		$this->beforeFilter('authentify.check', array('only' => array('getAccount', 'postAccount', 'postPassword', 'postSignOut')));
 		$this->beforeFilter('authentify.guest', array('only' => array('getSignIn', 'postSignIn', 'getSignUp', 'postSignUp', 'getRemind', 'postRemind', 'getReset', 'postReset')));
 	}
@@ -28,6 +29,11 @@ class AuthentifyController extends BaseController {
 		else {
 			$userdata = $input;
 			$userdata['active'] = 1;
+			$remember = false;
+
+			if (Config::get('authentify::rememberable')) {
+				$remember = Input::get('remember') == '1';
+			}
 
 			if (Auth::attempt($userdata)) {
 				return Redirect::intended(URL::to('/'));

@@ -10,6 +10,7 @@ return array(
 	'new-password_confirmation' => 'Confirma tu nueva contraseña',
 	'sign-up' => 'Registrarses',
 	'sign-in' => 'Iniciar Sesión',
+	'remember-me' => 'Recordarme',
 	'sign-out' => 'Cerrar Sesión',
 	'my-account' => 'Mi cuenta',
 	'reset-password' => 'Cambiar Contraseña',

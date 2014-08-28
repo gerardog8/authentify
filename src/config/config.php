@@ -17,6 +17,6 @@ return array(
 	'confirmable' => true,
 	'welcomeable' => true,
 	'remindable' => true,
-	'remindable' => true,
-	'remindable' => true,
+	'updateable' => true,
+	'rememberable' => true,
 );
