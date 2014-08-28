@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration {
 				$table->string('name', 100);
 				$table->boolean('active');
 				$table->string('remember_token', 100);
+				$table->datetime('active_at');
+				$table->datetime('login_at');
 				$table->timestamps();
 			});
 		}

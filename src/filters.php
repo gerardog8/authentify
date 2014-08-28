@@ -34,3 +34,8 @@ Route::filter('authentify.role', function ($route, $request, $param) {
 		App::abort(404);
 	}
 });
+
+Event::listen('auth.login', function($user) {
+	$user->login_at = new DateTime;
+	$user->save();
+});

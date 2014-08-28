@@ -13,12 +13,12 @@ class AuthentifyUser extends Model implements UserInterface, RemindableInterface
 
 	protected $hidden = array('password', 'remember_token');
 	protected $fillable = array('password', 'email', 'name');
+	protected $dates = array('login_at', 'active_at');
 	protected $table;
 	protected static $auto_validate = false;
 	protected static $rules = array(
 		'email' => 'required|email',
-		'password' => 'required|alphaNum|min:3',
-		'password_confirmation' => 'sometimes|alphaNum|min:3|same:password',
+		'password' => 'required|alphaNum|min:3|confirmable',
 		'name' => 'required|max:200'
 	);
 
